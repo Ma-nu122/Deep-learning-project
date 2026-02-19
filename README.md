@@ -1,36 +1,63 @@
-# Jellyfish Image Classification
+# Image Classification with CNN Architectures
 
-Deep Learning project for multi-class image classification using Convolutional Neural Networks.
+Deep Learning project focused on multi-class image classification using Convolutional Neural Networks (CNNs) implemented in PyTorch.
 
-## Objective
+---
 
-Compare different CNN architectures to evaluate their performance on a 12-class image dataset and analyze model behavior in terms of accuracy, loss trends, and overfitting.
+## Datasets
 
-## Models Implemented
+### 1️⃣ Jellyfish Dataset
+Multi-class image dataset of jellyfish species.
 
-- AlexNet (trained from scratch)
+Models implemented:
 - GoogLeNet
 - ResNet18
+
+Objective:
+Compare architectures and analyze performance differences, training stability, and impact of preprocessing.
+
+---
+
+### 2️⃣ Natural Images Dataset
+Multi-class dataset of natural scene images.
+
+Model implemented:
+- AlexNet (trained from scratch)
+
+Objective:
+Build a complete training pipeline including logging, model saving, and visualization of training metrics.
+
+---
 
 ## Framework
 
 Python, PyTorch
 
-## Training Setup
+---
+
+## Training Pipeline
 
 - CrossEntropyLoss
 - Adam optimizer
-- Early Stopping to prevent overfitting
-- Logging and saving of model checkpoints (.pth)
-- Visualization of training loss and accuracy curves
+- Early Stopping
+- Logging of training/validation metrics
+- Saving trained models (.pth)
+- Visualization of loss and accuracy trends
 
-## Evaluation
+---
 
-Model performance was assessed using:
-- Training and validation accuracy
-- Loss trends across epochs
-- Error analysis and comparison between architectures
+## Evaluation Approach
 
-## Key Insight
+- Monitoring training and validation accuracy
+- Analysis of loss convergence
+- Error analysis across architectures
+- Comparison of model stability
 
-Residual connections (ResNet18) improved training stability compared to earlier architectures, while preprocessing quality significantly impacted final performance.
+---
+
+## Key Insights
+
+- Residual connections (ResNet18) improved training stability compared to earlier architectures.
+- Model performance was strongly influenced by dataset preprocessing and image quality.
+- Early stopping helped mitigate overfitting in smaller datasets.
+
